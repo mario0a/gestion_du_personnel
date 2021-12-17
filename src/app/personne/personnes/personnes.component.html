@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="card shadow mb-4">
+    <div class="card-body">
+      <table class="table table-striped">
+        <tr> <th>Id</th><th>Nom</th><th>Prenom</th> <th>Date de Naissance</th><th>Poste</th> <th>Date Arrivé</th> </tr>
+        <tbody *ngFor="let personne of personnes">
+        <tr >
+          <td>{{personne.idPersonne}}</td>
+          <td>{{personne.nomPersonne}}</td>
+          <td>{{personne.prenomPersonne}}</td>
+          <td>{{personne.dateNaissance | date:'dd/MM/yyyy'}}</td>
+          <td>{{personne.postePersonne}}</td>
+          <td>{{personne.dateArrive | date:'dd/MM/yyyy'}}</td>
+
+
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

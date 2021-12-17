@@ -1,0 +1,40 @@
+<div class="container">
+  <div>
+    <h2>Ajouter une nouvelle personne </h2>
+  </div>
+  <form >
+    <div class="col-sm-2 col-md-2 col-lg-2">
+      <label >ID Personne</label>
+      <input type="text" [(ngModel)] = " newPersonne.idPersonne"
+             name="idPersonne" class="form-control">
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4" >
+      <label >Nom </label>
+      <input type="text"[(ngModel)]= "newPersonne.nomPersonne"
+             name="nomPersonne" class="form-control">
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4" >
+      <label >Prenom </label>
+      <input type="text"[(ngModel)]= "newPersonne.prenomPersonne"
+             name="prenomPersonne" class="form-control">
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4">
+      <label >Date Naissance</label>
+      <input type="date" [(ngModel)]= "newPersonne.dateNaissance"
+             name="dateNaissance" class="form-control">
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4" >
+      <label >Poste </label>
+      <input type="text"[(ngModel)]= "newPersonne.postePersonne"
+             name="postePersonne" class="form-control">
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4">
+      <label >Date Ariivée</label>
+      <input type="date" [(ngModel)]=  "newPersonne.dateArrive"
+             name="dateArrive" class="form-control">
+    </div>
+    <div class="mt-2">
+      <button type="submit" (click)="addPersonne()" class="btn btn-success">Ajouter</button>
+    </div>
+  </form>
+</div>
