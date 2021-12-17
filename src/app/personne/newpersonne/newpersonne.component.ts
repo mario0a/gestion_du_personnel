@@ -9,14 +9,16 @@ import { PersonneService} from "../../services/personne.service";
 })
 export class NewpersonneComponent implements OnInit {
   newPersonne = new Personne();
+  message!: string;
 
-  constructor( private produitService: PersonneService ) { }
+  constructor( private personneService: PersonneService ) { }
 
 
   ngOnInit(): void {
   }
   addPersonne(){
-    this.produitService.ajouterPersonne(this.newPersonne);
+    this.personneService.ajouterPersonne(this.newPersonne);
+    this.message= this.newPersonne.nomPersonne+" a été ajouté avec succés !"
 
   }
 
