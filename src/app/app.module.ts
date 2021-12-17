@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 
 import { NewpersonneComponent } from './personne/newpersonne/newpersonne.component';
 import { PersonnesComponent } from './personne/personnes/personnes.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { PersonnesComponent } from './personne/personnes/personnes.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
