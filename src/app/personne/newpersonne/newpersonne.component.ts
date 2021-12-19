@@ -18,7 +18,7 @@ export class NewpersonneComponent implements OnInit {
   }
   addPersonne(){
     this.personneService.ajouterPersonne(this.newPersonne);
-    this.message= this.newPersonne.nomPersonne+" a été ajouté avec succés !"
+    this.message= this.newPersonne.nomPersonne+" ca été ajouté avec succés !"
 
   }
 

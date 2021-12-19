@@ -7,14 +7,15 @@ import { AppComponent } from './app.component';
 import { NewpersonneComponent } from './personne/newpersonne/newpersonne.component';
 import { PersonnesComponent } from './personne/personnes/personnes.component';
 import { FormsModule } from '@angular/forms';
+import { UpdatePersonneComponent } from './personne/update-personne/update-personne.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-
      NewpersonneComponent,
-      PersonnesComponent
+      PersonnesComponent,
+      UpdatePersonneComponent
   ],
   imports: [
     BrowserModule,

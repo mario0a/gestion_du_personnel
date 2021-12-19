@@ -11,10 +11,14 @@
           <td>{{personne.dateNaissance | date:'dd/MM/yyyy'}}</td>
           <td>{{personne.postePersonne}}</td>
           <td>{{personne.dateArrive | date:'dd/MM/yyyy'}}</td>
+          <td><a class="btn btn-danger" (click)="supprimerPersonne(personne)" >Supprimer</a></td>
+          <td><a class="btn btn-success" [routerLink]="['/updatePersonne',personne.idPersonne]">Modifier</a></td>
 
 
         </tr>
+
         </tbody>
+
       </table>
     </div>
   </div>

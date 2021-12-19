@@ -18,5 +18,12 @@ export class PersonnesComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  supprimerPersonne(p: Personne)
+  {
+    let confirmation=confirm("Etes-vous sûr de vouloir supprimer ?")
+    this.personneService.supprimerPersonne(p);
+
+  }
+
 
 }
