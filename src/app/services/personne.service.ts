@@ -41,6 +41,7 @@ export class PersonneService {
     this.personne = this.personnes.find(p => p.idPersonne == id);
     return this.personne;
   }
+  //
   updatePersonne(p:Personne)
   {
     this.supprimerPersonne(p);
