@@ -7,6 +7,8 @@ import { Personne  } from "../model/personne.model";
 })
 export class PersonneService {
   personnes : Personne[]; //un tableau de Personne
+  // @ts-ignore
+  personne: Personne;
 
   constructor() {
     this.personnes = [
@@ -24,5 +26,24 @@ export class PersonneService {
   }
   ajouterPersonne( pers: Personne){
     this.personnes.push(pers);
+  }
+  supprimerPersonne( prod: Personne){
+
+    const index = this.personnes.indexOf(prod, 0);
+    if (index > -1) {
+      this.personnes.splice(index, 1);
+    }
+
+  }
+
+  consulterPersonne(id:number): Personne{
+    // @ts-ignore
+    this.personne = this.personnes.find(p => p.idPersonne == id);
+    return this.personne;
+  }
+  updatePersonne(p:Personne)
+  {
+    this.supprimerPersonne(p);
+    this.ajouterPersonne(p);
   }
 }
