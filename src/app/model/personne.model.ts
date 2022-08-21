@@ -1,10 +1,10 @@
-export  class Personne{
-   // @ts-ignore
+export  interface Personne{
+
   idPersonne: number;
-  nomPersonne!: string;
-  prenomPersonne!: string;
-  postePersonne!: string;
-  dateArrive!: Date;
-  dateNaissance!: Date;
+  nomPersonne: string;
+  prenomPersonne: string;
+  postePersonne: string;
+  dateArrive: Date;
+  dateNaissance: Date;
 
 }
